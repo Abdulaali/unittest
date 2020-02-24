@@ -30,19 +30,6 @@ pipeline {
            fingerprint 'target/*.jar'
         }
     }
-    stage ('Notify'){
-        steps {
-        mail bcc: '', body: '''Please check the build "shopping cart" in jenkins. its failed
 
-Team jenkins''', cc: '', from: '', replyTo: '', subject: 'Build has failed , Please check', to: 'mailabdulaali@gmail.com'
-        }  
-    }
-    stage('HTML_Publish') {
-	     steps {
-	         junit 'target/surefire-reports/TEST-*.xml'
-        }
-    }
-
-  }
 
 }
