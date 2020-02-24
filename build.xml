@@ -5,6 +5,7 @@
   <property name="test.src.dir" value="src/test/java"/>
   <property name="test.reports.dir" value="build/test/reports"/>
 
+
   <path id="classpath.test">
     <pathelement location="lib/junit-4.12.jar"/>
     <pathelement location="lib/hamcrest-core-1.3.jar"/>
